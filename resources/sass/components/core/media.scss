@@ -1,0 +1,72 @@
+@use '../base/_variables' as _variables;
+
+.lf-directory {
+    position: relative;
+
+    .lf-checkbox {
+        position: absolute;
+        left: 6px;
+        top: -4px;
+
+        & input:checked + label::before {
+            background: none;
+            color: #504d4d;
+        }
+
+        & label::before {
+            top: 33px;
+            left: 35px;
+            width: 16px;
+            height: 16px;
+            font-size: 18px;
+            line-height: 17px !important;
+            background: none;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 0;
+            border-top-left-radius: 10px;
+
+        }
+    }
+
+    .lf-folder-link {
+        .lf-media-folder {
+            padding: 20px 25px !important;
+            border-radius: 10px;
+            background: _variables.$gray-8;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+            & .lf-media-folder {
+                background: darken(_variables.$white-color, 50);
+            }
+
+            & + .lf-folder-text-link {
+                color: darken(_variables.$white-color, 50);
+            }
+        }
+    }
+
+    .lf-folder-text-link {
+        color: _variables.$white-color;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:hover {
+            color: darken(_variables.$white-color, 50);
+
+            & ~ .lf-folder-link {
+                & .lf-media-folder {
+                    background: darken(_variables.$white-color, 50);
+                }
+            }
+        }
+    }
+}
+
+.media-box img {
+    object-fit: cover;
+    height: 140px;
+    width: 100%;
+}

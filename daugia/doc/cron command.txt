@@ -1,0 +1,7 @@
+for vps
+* * * * * cd /var/www/html/auctioneer && php artisan schedule:run >> /dev/null 2>&1
+
+for shared hosting
+* * * * * /usr/local/bin/php /home/hostingUsernameHere/public_html/artisan schedule:run >> /dev/null 2>&1
+
+N.B- if your directory is in somewhere else inside public_html, use that folder structure after public_html/

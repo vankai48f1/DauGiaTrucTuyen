@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>App Control - Auctioneer Docs</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="css/style.css" rel="stylesheet">
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">Auctioneer Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="installation.html" class="nav-link">Installation</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="app-control.html" class="nav-link">App Control</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="auction-management.html" class="nav-link">Auction Management</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="visual_editor.html" class="nav-link">Visual Editor</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="installation.html" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="auction-management.html" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#application-control" class="nav-link">Application Control</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link"></a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#admin-application-control" class="nav-link">Admin Application Control</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_2" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_3" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_4" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_5" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_6" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_7" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_8" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_9" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_10" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_11" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_12" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_13" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_14" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_15" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_16" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="application-control"><strong>Application Control</strong></h2>
+<p>This section describes how you can manage your application. All the description is in bellow with images</p>
+<p>Use the following default credentials to get logged in as superadmin - </p>
+<ul>
+<li><strong>URL :</strong> https://yourdomain.url/login</li>
+<li><strong>User Name :</strong> superadmin</li>
+<li><strong>Password :</strong> superadmin</li>
+</ul>
+<p>NB: change the credentials to ignore security issue.</p>
+<p>Instructions : <code>Dashboard &gt; My Profile &gt; Edit Profile / Change Password</code></p>
+<h1 id="_1"></h1>
+<h2 id="admin-application-control">Admin Application Control</h2>
+<p>First of all you can set admin options according to your requirements in the system. to do that please follow steps has been explained below one by one</p>
+<ul>
+<li>Step 1 : Set up general settings</li>
+<li>Step 2 : Set up auction settings</li>
+<li>Step 3 : Set up paypal credential</li>
+<li>Step 4 : Set up page basic information</li>
+</ul>
+<h1 id="_2"></h1>
+<h3 id="application-settings">Application Settings</h3>
+<p>After login as superadmin go to <code>Application Control &gt; Application Settings</code></p>
+<p><img alt="App Control" src="images/application-control.png" /></p>
+<h1 id="_3"></h1>
+<h4 id="step-1-general-settings">Step 1 : General Settings</h4>
+<p>To set general information of your application go to <code>General</code>. from application settings</p>
+<p><img alt="Settings" src="images/settings.png" /></p>
+<p>To edit the general options just input data and click update.</p>
+<p><img alt="Settings" src="images/general-settings.png" /></p>
+<h1 id="_4"></h1>
+<h4 id="step-2-auction-settings">Step 2 : Auction Settings</h4>
+<p>To set Auction and Bidding fees, go to <code>Auction Settings</code>. from application settings</p>
+<p><img alt="Auction Settings" src="images/Auction_setting.png" /></p>
+<p>To edit the general options just input data and click update.</p>
+<p>Note :</p>
+<ol>
+<li>
+<p>Bidding Fees : All bidding fees in fixed amounts.</p>
+</li>
+<li>
+<p>Seller money release request : If you want to release Seller money (the money seller about to get after selling a product) automatically, set this field as Disabled, if you want to release seller money manually please set this field as Enabled</p>
+</li>
+<li>
+<p>Buyer Report Time : If buyer don't get the product or face any problem after winner an auction buyer will be able to report on the seller, Set how many days buyer will get to report after the delivery date passes which given by the seller.</p>
+</li>
+</ol>
+<h1 id="_5"></h1>
+<h4 id="step-1-paypal-settings">Step 1 : Paypal Settings</h4>
+<p>To set Payment method, go to Paypal Settings. Add Your paypal credential here.</p>
+<p><img alt="Auction Settings" src="images/paypal_settings.png" /></p>
+<p>You can get the above credentials from your PAYPAL BUSSINESS account. Visit the following links to get the credentials.</p>
+<blockquote>
+<p>https://developer.paypal.com/developer/accounts/</p>
+<p>https://developer.paypal.com/docs/integration/admin/manage-apps/</p>
+</blockquote>
+<p>See the following image -
+<img alt="Auction Settings" src="images/paypal_credentials.gif" /></p>
+<h5 id="paypal-web-hook-id">Paypal Web Hook ID</h5>
+<p>For Paypal webhook ID go to Add WebHook Section in live mode and click on Add Webhook button.
+<img alt="Auction Settings" src="images/paypal_webhook.jpg" />
+Use the following url Webhook Url in paypal webhook setting -</p>
+<blockquote>
+<p>https://yourdomain.com/api/paypal/webhook</p>
+</blockquote>
+<p><code>NB: To use paypal service your website must to be SSL certified which means HTTPS.</code></p>
+<p>For Event types select the following options and save - </p>
+<ul>
+<li>Payment sale completed</li>
+<li>Payment sale denied</li>
+<li>Payment sale refunded</li>
+<li>Payment sale reversed</li>
+</ul>
+<p><img alt="Auction Settings" src="images/paypal_webhook_event.png" /></p>
+<p>Now you are ready to use paypal payment method.</p>
+<h1 id="_6"></h1>
+<h3 id="role-management"><strong>Role Management</strong></h3>
+<p>To manage role. go to <code>Application Control &gt; Role Management</code></p>
+<h4 id="edit-role">Edit Role</h4>
+<p>To edit a role. follow this direction <code>Application Control &gt; Role Management &gt; list</code></p>
+<p><img alt="Auction Settings" src="images/Role_Management.png" /></p>
+<p>There will three types of role such as</p>
+<ul>
+<li>1 Buyer</li>
+<li>2 Seller</li>
+<li>3 Admin</li>
+</ul>
+<p><img alt="Auction Settings" src="images/edit_role.png" /></p>
+<p>From the right side setting icon, you can edit a role. you can change <code>route accesses</code> from there. which will define a user or seller will get access of what events. You can also disable all users at once.</p>
+<h4 id="create-role">Create Role</h4>
+<p>To create new role. please go to <code>Application Control &gt; Role Management &gt; Create New</code></p>
+<p><img alt="Auction Settings" src="images/create_role.png" /></p>
+<p><strong>Note :</strong> You can create a new role from here, and you will be able to give the new role as much as access you want. follow instruction has been given below.</p>
+<p><img alt="Auction Settings" src="images/create_new_role.png" /></p>
+<p><strong>Important :</strong> Before you create a new role and give access, must check how much access you are giving to the new role.</p>
+<h1 id="_7"></h1>
+<h4 id="language-management"><strong>Language Management</strong></h4>
+<p>To Configure your language. please go to <code>Application Control &gt; Language Management &gt; Settings</code></p>
+<p><img alt="Auction Settings" src="images/Language_Settings.png" /></p>
+<h1 id="_8"></h1>
+<h5 id="settings"><strong>Settings</strong></h5>
+<p>You can change language from here..</p>
+<p><img alt="Auction Settings" src="images/lang_setting.png" /></p>
+<h1 id="_9"></h1>
+<h5 id="switch-language"><strong>Switch Language</strong></h5>
+<p>To switch language. go to <code>Application Control &gt; Language Management &gt; list</code></p>
+<p><img alt="Auction Settings" src="images/lang_list.png" />
+You can switch your application language from here.</p>
+<h1 id="_10"></h1>
+<h5 id="create-new-language"><strong>Create New Language</strong></h5>
+<p>To create new language. go to <code>Application Control &gt; Language Management &gt; Create New</code></p>
+<p><img alt="Auction Settings" src="images/lang_create.png" />
+You will be able to create a new language from here</p>
+<p><img alt="Auction Settings" src="images/lang_create_form.png" /></p>
+<h1 id="_11"></h1>
+<h4 id="menu-manager"><strong>Menu Manager</strong></h4>
+<p>To manage your menu. go to <code>Application Control &gt; Menu Manager</code></p>
+<p><img alt="Auction Settings" src="images/menu.png" /></p>
+<h1 id="_12"></h1>
+<h5 id="custom-link-dropdown-title"><strong>Custom link / Dropdown title</strong></h5>
+<p>you can add <code>custom link and dropdown title</code> to your backend nav from here. please follow below steps</p>
+<p><img alt="Auction Settings" src="images/add_link.png" /></p>
+<blockquote>
+<p>Use 1 : If you want to make a link, place the url of your link to <code>Enter Url</code> field and title to <code>Enter menu item name</code> filed</p>
+<p>Use 2 : If you want to make a dropdown, left <code>Enter Url</code> field blank and give the dropdown title in <code>Enter menu item name</code></p>
+</blockquote>
+<h1 id="_13"></h1>
+<h5 id="add-existed-link"><strong>Add Existed Link</strong></h5>
+<p><img alt="Auction Settings" src="images/add_route.png" /></p>
+<p><strong>Important :</strong> You can add a link to your nav which is already existed in this application. you can left it as a nav item or you can use it as <code>sub link</code> of a dropdown menu. There is a option in the right side titled as <code>Menu Items</code> where you can <code>drag and drop</code> your menu items, which will help you to make a item to convert it into a dropdown sub item.</p>
+<h1 id="_14"></h1>
+<h5 id="customize-link"><strong>Customize link</strong></h5>
+<p><img alt="Auction Settings" src="images/route_menu.png" /></p>
+<p>You can drag and drop your item to change position and you are allowed to convert the item to dropdown sub item by <code>pushing to right</code> a bit</p>
+<p><img alt="Auction Settings" src="images/drag_drop.png" /></p>
+<p>You can customize your item from here, and you also can use font awesome icon, use icon class in menu icon field, <code>example : fa fa-icon</code></p>
+<p><strong>Important :</strong> After customization your nav, don't forget to click on <code>Save Menu</code>.</p>
+<h3 id="user-management"><strong>User Management</strong></h3>
+<p>User management is an important section of your application. From here you can control all users. also you have the access to suspend financial activities / remove an user and change users account status.</p>
+<h1 id="_15"></h1>
+<h3 id="manage-user">Manage User</h3>
+<p>To manage user profile : go to <code>User Management &gt; List</code> on the right of a user list, you will find a setting icon where you will get all the access to control any user's status and profile.</p>
+<h1 id="_16"></h1>
+<h3 id="create-new-user">Create New User</h3>
+<p>You also will able to create new user with any type of user role. from <code>User Management &gt; Create New</code>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Auction</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/reset-css.css" />
+        <link rel="stylesheet" type="text/css" href="css/stylemy-custom.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+        <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
+        <link rel="stylesheet" type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css" />
+        <link rel="stylesheet" type="text/css" href="lightGallery-master/dist/css/lightgallery.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="header-desktop">
+                <div class="contact-header">
+                    <div class="container">
+                        <div class="contact-header__content dp-flex">
+                            <ul class="contact-header__left dp-flex">
+                                <li>
+                                    <a href="#">Liên hệ: 0934.143369</a>
+                                </li>
+                                <li>
+                                    <a href="#">Email: daugiatructuyenvietnam@gmail.com</a>
+                                </li>
+                            </ul>
+                            <div class="contact-header__right">
+                                <ul class="login-logout-hd">
+                                    <li>
+                                        <a href="./register-account.html">Đăng nhập/ Đăng kí</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo-header bg-white-dark">
+                    <div class="container">
+                        <div class="wrap-ct-logo flex">
+                            <div class="img-logo mcol-xl-5 mcol-lg-4 m-col-4">
+                                <a href="./index.html">
+                                    <img src="./image/images/logo-daugia.png" alt="logo-daugia" />
+                                </a>
+                            </div>
+
+                            <div class="mcol-xl-7 mcol-lg-8 m-col-8">
+                                <div class="form-search-header dp-flex">
+                                    <div class="product-cat">
+                                        <select class="list-cat">
+                                            <option value="0">Danh mục</option>
+                                            <option value="">Tài sản khác</option>
+                                            <option value="">Tang vật vi phạm</option>
+                                            <option value="">Hàng hiệu xa xỉ</option>
+                                            <option value="">Sưu tầm - nghệ thuật</option>
+                                            <option value="">Phương tiện - xe cộ</option>
+                                            <option value="">Bất động sản</option>
+                                            <option value="">Tài sản công</option>
+                                        </select>
+                                    </div>
+                                    <form action="" method="">
+                                        <input type="text" placeholder="Tìm kiếm..." />
+                                        <button type="submit" class="m-button-search">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-header">
+                    <div class="container">
+                        <div class="wrap-nav-hd dp-flex">
+                            <div class="nav-cat">
+                                <span class="nav-cat-bar bg-white-dark"><i class="fa fa-bars"
+                                        aria-hidden="true"></i>&ensp;&nbsp;
+                                    Danh mục
+                                    tài
+                                    sản
+                                </span>
+                                <ul class="nav-list-assets">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-university" aria-hidden="true"></i>&ensp;&nbsp; Tài sản công
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-home" aria-hidden="true"></i>&ensp;&nbsp;Bất động sản
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-car" aria-hidden="true"></i>&ensp;&nbsp;Phương tiện - xe cộ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-picture-o" aria-hidden="true"></i>&ensp;&nbsp;Sưu tầm - nghệ
+                                            thuật
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-diamond" aria-hidden="true"></i>&ensp;&nbsp;Hàng hiệu xa xỉ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-star" aria-hidden="true"></i>&ensp;&nbsp;Tang vật bị tịch
+                                            thu
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-plus-circle" aria-hidden="true"></i>&ensp;&nbsp;Tài sản khác
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-menu">
+                                <ul class="list-menu dp-flex">
+                                    <li>
+                                        <a href="#">Cuộc đấu giá</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Cuộc đấu giá sắp đấu giá</a></li>
+                                            <li><a href="#">Cuộc đấu giá đang diễn ra</a></li>
+                                            <li><a href="#">Cuộc đấu giá đã kết thúc</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tin tức</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Thông báo đấu giá</a></li>
+                                            <li><a href="#">Kết quả đấu giá</a></li>
+                                            <li><a href="#">Tin khác</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Giới thiệu</a></li>
+                                    <li><a href="#">Liên hệ bán tài sản</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mb">
+                <div class="wrap-hd-mb dp-flex">
+                    <div class="logo-mb">
+                        <a href="#">
+                            <img src="./image/images/logo-daugia.png" alt="logo-daugia">
+                        </a>
+                    </div>
+
+                    <div class="nav-bar-icon">
+                        <span class="bar-icon">
+                            <img src="./image/images/menu.png" alt="menu">
+                        </span>
+                    </div>
+                </div>
+                <ul class="nav-menu-mb">
+                    <li>
+                        <a href="#">Cuộc đấu giá <span class="drop-sub-menu-mb"><i class="fa fa-angle-down"
+                                    aria-hidden="true"></i></span></a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Cuộc đấu giá sắp đấu giá</a></li>
+                            <li><a href="#">Cuộc đấu giá đang diễn ra</a></li>
+                            <li><a href="#">Cuộc đấu giá đã kết thúc</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Tin tức <span class="drop-sub-menu-mb"><i class="fa fa-angle-down"
+                                    aria-hidden="true"></i></span></a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Thông báo đấu giá</a></li>
+                            <li><a href="#">Kết quả đấu giá</a></li>
+                            <li><a href="#">Tin khác</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Liên hệ bán tài sản </a></li>
+                    <li><a href="./register-account.html">Đăng nhập/Đăng kí</a></li>
+                </ul>
+            </div>
+        </header>
+
+
+        <div class="main bg-white-dark">
+            <section>
+                <div class="slider-top">
+                    <div class="container">
+                        <div class="wrap-slider-banner">
+                            <ul class="slider-banner">
+                                <li>
+                                    <img class="image-banner" src="./image/BannerBDS1.jpg" alt="BannerBDS1">
+                                </li>
+                                <li>
+                                    <img class="image-banner" src="./image/BannerWatch.jpg" alt="BannerWatch">
+                                </li>
+                                <li>
+                                    <img class="image-banner" src="./image/BannerCar.jpg" alt="BannerCar">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="mb-reverse">
+                    <div class="container pd-ctn-mb">
+                        <div class="assets-coming">
+                            <div class="title-section">
+                                <h2>Tài sản sắp được đấu giá</h2>
+                                <div class="line-section"
+                                    style="background-image: url(./image/images/section-border.png);">
+                                </div>
+                            </div>
+                            <ul class="list-assets-coming dp-grid">
+                                <li class="item-assets-coming">
+                                    <div class="thumbnail-assets-coming">
+                                        <a href="./single-product.html" title="Đấu giá" class="link-gavel">
+                                            <i class="fa fa-gavel" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="./single-product.html" class="link-thumb-com">
+                                            <img src="./image/assets/20201117_091903.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="ct-assets-coming">
+                                        <a href="./single-product.html">
+                                            <h3>Lô tài sản số 2-Vật tư, công cụ, dụng cụ cũ hỏng của Viễn thông Đồng Nai
+                                            </h3>
+                                        </a>
+
+                                        <div class="price-assets-coming">
+                                            <p>Giá khởi điểm:</p>
+                                            <p><strong>216.121.625</strong>&nbsp;VNĐ</p>
+                                            <p>Thời gian: 18/1/2021&nbsp;11:00</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-assets-coming">
+                                    <div class="thumbnail-assets-coming">
+                                        <a href="#" title="Đấu giá" class="link-gavel">
+                                            <i class="fa fa-gavel" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" class="link-thumb-com">
+                                            <img src="./image/assets/CB1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="ct-assets-coming">
+                                        <a href="#">
+                                            <h3>Lô tài sản số 1-Cáp đồng các loại của viễn thông Phú Thọ</h3>
+                                        </a>
+
+                                        <div class="price-assets-coming">
+                                            <p>Giá khởi điểm:</p>
+                                            <p><strong>216.121.625</strong>&nbsp;VNĐ</p>
+                                            <p>Thời gian: 18/1/2021&nbsp;11:00</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-assets-coming">
+                                    <div class="thumbnail-assets-coming">
+                                        <a href="#" title="Đấu giá" class="link-gavel">
+                                            <i class="fa fa-gavel" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" class="link-thumb-com">
+                                            <img src="./image/assets/HD5.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="ct-assets-coming cate-item">
+                                        <a href="#">
+                                            <h3>Lô tài sản số 2-Vật tư, công cụ, dụng cụ cũ hỏng của Viễn thông Đồng Nai
+                                            </h3>
+                                        </a>
+                                        <div class="price-assets-coming">
+                                            <p>Giá khởi điểm:</p>
+                                            <p><strong>216.121.625</strong>&nbsp;VNĐ</p>
+                                            <p>Thời gian: 18/1/2021&nbsp;11:00</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-assets-coming">
+                                    <div class="thumbnail-assets-coming">
+                                        <a href="#" title="Đấu giá" class="link-gavel">
+                                            <i class="fa fa-gavel" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" class="link-thumb-com">
+                                            <img src="./image/assets/QB6.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="ct-assets-coming">
+                                        <a href="#">
+                                            <h3>Lô tài sản số 2-Vật tư, công cụ, dụng cụ cũ hỏng của Viễn thông Đồng Nai
+                                            </h3>
+                                        </a>
+                                        <div class="price-assets-coming">
+                                            <p>Giá khởi điểm:</p>
+                                            <p><strong>216.121.625</strong>&nbsp;VNĐ</p>
+                                            <p>Thời gian: 18/1/2021&nbsp;11:00</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-assets-coming">
+                                    <div class="thumbnail-assets-coming">
+                                        <a href="#" title="Đấu giá" class="link-gavel">
+                                            <i class="fa fa-gavel" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="#" class="link-thumb-com">
+                                            <img src="./image/assets/QB7.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="ct-assets-coming">
+                                        <a href="#">
+                                            <h3>Lô tài sản số 2-Vật tư, công cụ, dụng cụ cũ hỏng của Viễn thông Đồng Nai
+                                            </h3>
+                                        </a>
+                                        <div class="price-assets-coming">
+                                            <p>Giá khởi điểm:</p>
+                                            <p><strong>216.121.625</strong>&nbsp;VNĐ</p>
+                                            <p>Thời gian: 18/1/2021&nbsp;11:00</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section-category">
+                        <div class="container">
+                            <div class="dp-grid ss-cate-wrap">
+                                <div class="ss-cate-column">
+                                    <div class="dp-grid ss-cate-double">
+                                        <div class="ss-cate-item">
+                                            <div class="ss-cate-thumbnail"
+                                                style="background-image: url(image/danhmuctaisan/tai_san_cong.jpg);">
+                                                <a href="#" class="ss-cate-ct">
+                                                    <h3>Tài sản công</h3>
+                                                    <p>Tài sản (22)</p>
+                                                    <button class="m-button">Xem thêm</button>
+                                                </a>
+                                                <div class="bg-fill"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="ss-cate-item">
+                                            <div class="ss-cate-thumbnail"
+                                                style="background-image: url(image/danhmuctaisan/xe_co.jpg);">
+                                                <a href="#" class="ss-cate-ct">
+                                                    <h3>Xe cộ</h3>
+                                                    <p>Tài sản (4)</p>
+                                                    <button class="m-button">Xem thêm</button>
+                                                </a>
+                                                <div class="bg-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ss-cate-single">
+                                        <div class="ss-cate-item">
+                                            <div class="ss-cate-thumbnail"
+                                                style="background-image: url(image/danhmuctaisan/nghe_thuat.jpg);">
+                                                <a href="#" class="ss-cate-ct">
+                                                    <h3>Sưu tầm - Nghệ thuật</h3>
+                                                    <p>Tài sản (9)</p>
+                                                    <button class="m-button">Xem thêm</button>
+                                                </a>
+                                                <div class="bg-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ss-cate-column">
+                                    <div class="ss-cate-single">
+                                        <div class="ss-cate-item">
+                                            <div class="ss-cate-thumbnail"
+                                                style="background-image: url(image/danhmuctaisan/bat_dong_san.jpg);">
+                                                <a href="#" class="ss-cate-ct">
+                                                    <h3>Bất động sản</h3>
+                                                    <p>Tài sản (8)</p>
+                                                    <button class="m-button">Xem thêm</button>
+                                                </a>
+                                                <div class="bg-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="dp-grid ss-cate-double">
+                                        <div class="ss-cate-item">
+                                            <div class="ss-cate-thumbnail"
+                                                style="background-image: url(image/danhmuctaisan/hang_hieu.jpg);">
+                                                <a href="#" class="ss-cate-ct">
+                                                    <h3>Hàng hiệu</h3>
+                                                    <p>Tài sản (2)</p>
+                                                    <button class="m-button">Xem thêm</button>
+                                                </a>
+                                                <div class="bg-fill"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="ss-cate-item">
+                                            <div class="ss-cate-thumbnail"
+                                                style="background-image: url(image/danhmuctaisan/TaiSanKhac.jpg);">
+                                                <a href="#" class="ss-cate-ct">
+                                                    <h3>Tài sản khác</h3>
+                                                    <p>Tài sản (8)</p>
+                                                    <button class="m-button">Xem thêm</button>
+                                                </a>
+                                                <div class="bg-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-assets pd-ctn-mb">
+                    <div class="container">
+                        <div class="assets-ctn flex">
+                            <div class="category mcol-xl-3 mcol-lg-12  mcol-sm-12 top-bt-15">
+                                <div class="category-item ss-cate-thumbnail"
+                                    style="background-image: url(./image/artists/8-9-van-gogh-1431096263795.jpg);">
+                                    <div class="ss-cate-ct">
+                                        <h3>Sưu tầm nghệ thuật</h3>
+                                        <p>Tài sản (9)</p>
+                                        <a href="#" class="m-button">Xem tất cả</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assets-belong-to mcol-xl-9 mcol-lg-12 mcol-sm-12">
+                                <div class="flex">
+                                    <div class="mcol-xl-6 mcol-lg-6 mcol-sm-12 top-bt-15 mcol-col-12">
+                                        <div class="assets-item dp-flex">
+                                            <a href="#" class="assets-thumbnail mcol-xl-4 mcol-lg-5 mcol-sm-12">
+                                                <img src="./image/artists/phiasauconglang.jpg" alt="">
+                                            </a>
+                                            <div class="assets-content mcol-xl-8 mcol-lg-7 mcol-sm-12">
+                                                <a href="#">
+                                                    <h3>Đấu giá tác phẩm nghệ thuật phía sau cổng làng</h3>
+                                                </a>
+
+                                                <p class="assets-description df-font">Chủ tài sản: Công ty đấu giá hợp
+                                                    danh
+                                                    Lạc Việt
+                                                </p>
+                                                <p>Giá khởi điểm: <strong>20.000.000 VNĐ</strong></p>
+                                                <p>Thời gian đấu giá: 01/08/2020&nbsp;08:00</p>
+                                                <a href="#" title="Đấu giá" class="link-gavel">
+                                                    <i class="fa fa-gavel" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mcol-xl-6 mcol-lg-6 mcol-sm-12 top-bt-15 mcol-col-12">
+                                        <div class="assets-item dp-flex">
+                                            <a href="#" class="assets-thumbnail mcol-xl-4 mcol-lg-5 mcol-sm-12">
+                                                <img src="./image/artists/huongduong.jpg" alt="">
+                                            </a>
+                                            <div class="assets-content mcol-xl-8 mcol-lg-7 mcol-sm-12">
+                                                <a href="#">
+                                                    <h3>
+                                                        Đấu giá tác phẩm nghệ thuật Hướng Dương
+                                                    </h3>
+                                                </a>
+
+                                                <p class="assets-description df-font">Chủ tài sản: Công ty đấu giá hợp
+                                                    danh
+                                                    Lạc Việt
+                                                </p>
+                                                <p>Giá khởi điểm: <strong>20.000.000 VNĐ</strong></p>
+                                                <p>Thời gian đấu giá: 01/08/2020&nbsp;08:00</p>
+                                                <a href="#" title="Đấu giá" class="link-gavel">
+                                                    <i class="fa fa-gavel" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mcol-xl-6 mcol-lg-6 mcol-sm-12 top-bt-15 mcol-col-12">
+                                        <div class="assets-item dp-flex">
+                                            <a href="#" class="assets-thumbnail mcol-xl-4 mcol-lg-5 mcol-sm-12">
+                                                <img src="./image/artists/dia-cuu-long-1.jpg" alt="">
+                                            </a>
+                                            <div class="assets-content mcol-xl-8 mcol-lg-7 mcol-sm-12">
+                                                <h3>
+                                                    Đĩa Rồng Cửu Long 9 Con
+                                                </h3>
+                                                <p class="assets-description df-font">Chủ tài sản: Công ty đấu giá hợp
+                                                    danh
+                                                    Lạc Việt
+                                                </p>
+                                                <p>Giá khởi điểm: <strong>20.000.000 VNĐ</strong></p>
+                                                <p>Thời gian đấu giá: 01/08/2020&nbsp;08:00</p>
+                                                <a href="#" title="Đấu giá" class="link-gavel">
+                                                    <i class="fa fa-gavel" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mcol-xl-6 mcol-lg-6 mcol-sm-12 top-bt-15 mcol-col-12">
+                                        <div class="assets-item dp-flex">
+                                            <a href="#" class="assets-thumbnail mcol-xl-4 mcol-lg-5 mcol-sm-12">
+                                                <img src="./image/artists/HoaBangLang.jpg" alt="">
+                                            </a>
+                                            <div class="assets-content mcol-xl-8 mcol-lg-7 mcol-sm-12">
+                                                <a href="#">
+                                                    <h3>
+                                                        Đấu giá bức tranh hoa bằng lăng 100x150cm
+                                                    </h3>
+                                                </a>
+
+                                                <p class="assets-description df-font">Chủ tài sản: Công ty đấu giá hợp
+                                                    danh
+                                                    Lạc Việt
+                                                </p>
+                                                <p>Giá khởi điểm: <strong>20.000.000 VNĐ</strong></p>
+                                                <p>Thời gian đấu giá: 01/08/2020&nbsp;08:00</p>
+                                                <a href="#" title="Đấu giá" class="link-gavel">
+                                                    <i class="fa fa-gavel" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-assets">
+                    <div class="container pd-ctn-mb">
+                        <div class="assets-ctn flex">
+                            <div class="category mcol-xl-3 mcol-lg-12 mcol-sm-12 top-bt-15">
+                                <div class="category-item ss-cate-thumbnail"
+                                    style="background-image: url(./image/cars/range-rover-evoque-landmark-12.jpg);">
+                                    <div class="ss-cate-ct">
+                                        <h3>Xe cộ</h3>
+                                        <p>Tài sản (4)</p>
+                                        <a href="#" class="m-button">Xem tất cả</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assets-belong-to mcol-xl-9 mcol-lg-12 mcol-lg-12 mcol-sm-12">
+                                <div class="flex">
+                                    <div class="mcol-xl-6 mcol-lg-6 mcol-sm-12 top-bt-15 mcol-col-12">
+                                        <div class="assets-item dp-flex">
+                                            <a href="#" class="assets-thumbnail mcol-xl-4 mcol-lg-5 mcol-sm-12">
+                                                <img src="./image/cars/Bmw X6 1.jpg" alt="">
+                                            </a>
+                                            <div class="assets-content mcol-xl-8 mcol-lg-7 mcol-sm-12">
+                                                <a href="#">
+                                                    <h3>
+                                                        Đấu giá ô tô BMW X6 đời 2015
+                                                    </h3>
+                                                </a>
+
+                                                <p class="assets-description df-font">Chủ tài sản: Công ty đấu giá hợp
+                                                    danh
+                                                    Lạc Việt</p>
+                                                <p>Giá khởi điểm: <strong>1.950.000.000 VNĐ</strong></p>
+                                                <p>Thời gian đấu giá: 01/08/2020&nbsp;08:00</p>
+                                                <a href="#" title="Đấu giá" class="link-gavel">
+                                                    <i class="fa fa-gavel" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mcol-xl-6 mcol-lg-6 mcol-sm-12 top-bt-15 mcol-col-12">
+                                        <div class="assets-item dp-flex">
+                                            <a href="#" class="assets-thumbnail mcol-xl-4 mcol-lg-5 mcol-sm-12">
+                                                <img src="./image/cars/Sonata 2014 1.jpg" alt="">
+                                            </a>
+                                            <div class="assets-content mcol-xl-8 mcol-lg-7 mcol-sm-12">
+                                                <a href="#">
+                                                    <h3>
+                                                        Đấu giá ô tô Huyndai Sonata đời 2014 màu nâu
+                                                    </h3>
+                                                </a>
+
+                                                <p class="assets-description df-font">Chủ tài sản: Công ty đấu giá hợp
+                                                    danh
+                                                    Lạc Việt</p>
+                                                <p>Giá khởi điểm: <strong>20.000.000 VNĐ</strong></p>
+                                                <p>Thời gian đấu giá: 01/08/2020&nbsp;08:00</p>
+                                                <a href="#" title="Đấu giá" class="link-gavel">
+                                                    <i class="fa fa-gavel" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mcol-xl-6 mcol-lg-6 mcol-sm-12 top-bt-15 mcol-col-12">
+                                        <div class="assets-item dp-flex">
+                                            <a href="#" class="assets-thumbnail mcol-xl-4 mcol-lg-5 mcol-sm-12">
+                                                <img src="./image/cars/k1.jpg" alt="">
+                                            </a>
+                                            <div class="assets-content mcol-xl-8 mcol-lg-7 mcol-sm-12">
+                                                <a href="#">
+                                                    <h3>
+                                                        KIA Cerato đời 2016
+                                                    </h3>
+                                                </a>
+
+                                                <p class="assets-description df-font">Chủ tài sản: Công ty đấu giá hợp
+                                                    danh
+                                                    Lạc Việt</p>
+                                                <p>Giá khởi điểm: <strong>20.000.000 VNĐ</strong></p>
+                                                <p>Thời gian đấu giá: 01/08/2020&nbsp;08:00</p>
+                                                <a href="#" title="Đấu giá" class="link-gavel">
+                                                    <i class="fa fa-gavel" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mcol-xl-6 mcol-lg-6 mcol-sm-12 top-bt-15 mcol-col-12">
+                                        <div class="assets-item dp-flex">
+                                            <a href="#" class="assets-thumbnail mcol-xl-4 mcol-lg-5 mcol-sm-12">
+                                                <img src="./image/cars/t1.jpg" alt="">
+                                            </a>
+                                            <div class="assets-content mcol-xl-8 mcol-lg-7 mcol-sm-12">
+                                                <a href="#">
+                                                    <h3>
+                                                        Toyota Yaris đời 2014 Nhập khẩu Thái Lan
+                                                    </h3>
+                                                </a>
+
+                                                <p class="assets-description df-font">Chủ tài sản: Công ty đấu giá hợp
+                                                    danh
+                                                    Lạc Việt</p>
+                                                <p>Giá khởi điểm: <strong>20.000.000 VNĐ</strong></p>
+                                                <p>Thời gian đấu giá: 01/08/2020&nbsp;08:00</p>
+                                                <a href="#" title="Đấu giá" class="link-gavel">
+                                                    <i class="fa fa-gavel" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-assets">
+                    <div class="container pd-ctn-mb">
+                        <div class="assets-ctn flex">
+                            <div class="category mcol-xl-3 mcol-lg-12 mcol-lg-12 mcol-sm-12 top-bt-15">
+                                <div class="category-item ss-cate-thumbnail"
+                                    style="background-image: url(./image/property/ibid-video-2.jpg);">
+                                    <div class="ss-cate-ct">
+                                        <h3>Bất động sản</h3>
+                                        <p>Tài sản (8)</p>
+                                        <a href="#" class="m-button">Xem tất cả</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="assets-belong-to mcol-xl-9 mcol-lg-12 mcol-lg-12 mcol-sm-12">
+                                <div class="flex">
+                                    <div class="mcol-xl-6 mcol-lg-6 mcol-sm-12 top-bt-15 mcol-col-12">
+                                        <div class="assets-item dp-flex">
+                                            <a href="#" class="assets-thumbnail mcol-xl-4 mcol-lg-5 mcol-sm-12">
+                                                <img src="./image/property/vangiangHY4.jpg" alt="">
+                                            </a>
+                                            <div class="assets-content mcol-xl-8 mcol-lg-7 mcol-sm-12">
+                                                <a href="#">
+                                                    <h3>
+                                                        Đấu giá lô đất cho nhà đầu tư tại Xã Mễ Sở - Văn Giang - Hưng
+                                                        Yên!
+                                                    </h3>
+                                                </a>
+
+                                                <p class="assets-description df-font">Chủ tài sản: Công ty đấu giá hợp
+                                                    danh
+                                                    Lạc Việt</p>
+                                                <p>Giá khởi điểm: <strong>20.000.000 VNĐ</strong></p>
+                                                <p>Thời gian đấu giá: 01/08/2020&nbsp;08:00</p>
+                                                <a href="#" title="Đấu giá" class="link-gavel">
+                                                    <i class="fa fa-gavel" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mcol-xl-6 mcol-lg-6 mcol-sm-12 top-bt-15 mcol-col-12">
+                                        <div class="assets-item dp-flex">
+                                            <a href="#" class="assets-thumbnail mcol-xl-4 mcol-lg-5 mcol-sm-12">
+                                                <img src="./image/property/laocai1.jpg" alt="">
+                                            </a>
+                                            <div class="assets-content mcol-xl-8 mcol-lg-7 mcol-sm-12">
+                                                <a href="#">
+                                                    <h3>
+                                                        Nhà mặt phố Thạch Sơn, Thị Trấn Sapa, Lào Cai 2 sổ đỏ: 1 sổ
+                                                        240m; 1
+                                                        sổ
+                                                        180m
+                                                    </h3>
+                                                </a>
+
+                                                <p class="assets-description df-font">Chủ tài sản: Công ty đấu giá hợp
+                                                    danh
+                                                    Lạc Việt</p>
+                                                <p>Giá khởi điểm: <strong>20.000.000 VNĐ</strong></p>
+                                                <p>Thời gian đấu giá: 01/08/2020&nbsp;08:00</p>
+                                                <a href="#" title="Đấu giá" class="link-gavel">
+                                                    <i class="fa fa-gavel" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mcol-xl-6 mcol-lg-6 mcol-sm-12 top-bt-15 mcol-col-12">
+                                        <div class="assets-item dp-flex">
+                                            <a href="#" class="assets-thumbnail mcol-xl-4 mcol-lg-5 mcol-sm-12"
+                                                style="background-image: url(./image/property/biet-thu-ho-van-quan-2.jpg);">
+                                            </a>
+                                            <div class="assets-content mcol-xl-8 mcol-lg-7 mcol-sm-12">
+                                                <a href="#">
+                                                    <h3>
+                                                        Biệt thự 22 BT8 Hồ Văn Quán
+                                                    </h3>
+                                                </a>
+
+                                                <p class="assets-description df-font">Chủ tài sản: Công ty đấu giá hợp
+                                                    danh
+                                                    Lạc Việt</p>
+                                                <p>Giá khởi điểm: <strong>20.000.000 VNĐ</strong></p>
+                                                <p>Thời gian đấu giá: 01/08/2020&nbsp;08:00</p>
+                                                <a href="#" title="Đấu giá" class="link-gavel">
+                                                    <i class="fa fa-gavel" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="ss-contact-us">
+                <div class="title-section">
+                    <h2>Liên hệ với chúng tôi</h2>
+                    <div class="line-section" style="background-image: url(./image/images/section-border.png);">
+                    </div>
+                </div>
+
+                <div class="contact-us">
+                    <div class="container pd-ctn-mb">
+                        <div class="flex">
+                            <div class="mcol-xl-6 mcol-md-6 mb-hidden">
+                                <div class="img-suport">
+                                    <img src="./image/images/support.png" alt="">
+                                </div>
+                            </div>
+                            <div class="mcol-xl-6 mcol-lg-6 mcol-sm-12 mcol-col-12">
+                                <div class="form-contact-us">
+                                    <form action="">
+                                        <div class="input-group-name dp-grid">
+                                            <input type="text" name="" id="" placeholder="Họ tên">
+                                            <input type="text" name="" id="" placeholder="Số điện thoại">
+                                        </div>
+                                        <div class="input-group-name dp-grid">
+                                            <input type="text" name="" id="" placeholder="Email">
+                                            <input type="text" name="" id="" placeholder="Nơi công tác">
+                                        </div>
+                                        <textarea name="" id="" cols="30" rows="10" placeholder="Tin nhắn"></textarea>
+                                        <button type="submit">Gửi tin nhắn&ensp;<i class="fa fa-long-arrow-right"
+                                                aria-hidden="true"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="title-section">
+                    <h2>Tin tức đấu giá</h2>
+                    <div class="line-section" style="background-image: url(./image/images/section-border.png);">
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="container pd-ctn-mb">
+                        <div class="flex">
+                            <div class="mcol-xl-4 mcol-lg-4 mcol-md-4 mcol-col-12">
+                                <div class="flex news-wrap">
+                                    <div class="mcol-xl-4 mcol-lg-4 mcol-sm-4 news-thumbnail-ct">
+                                        <a href="#" class="news-thumbnail">
+                                            <img src="./image/assets/QB6.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="mcol-xl-8 mcol-lg-8 mcol-sm-8 news-ct-item">
+                                        <div class="news-content">
+                                            <a href="#" class="news-title">
+                                                <h3>
+                                                    Cáp đồng, vật tư công cụ, dụng cụ cũ hỏng không sử dụng của Viễn
+                                                    thông
+                                                    Phú Thọ
+                                                </h3>
+                                            </a>
+                                            <p class="news-description">...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mcol-xl-4 mcol-lg-4 mcol-md-4 mcol-col-12">
+                                <div class="flex news-wrap">
+                                    <div class="mcol-xl-4 mcol-lg-4 mcol-sm-4 news-thumbnail-ct">
+                                        <a href="#" class="news-thumbnail">
+                                            <img src="./image/assets/HD5.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="mcol-xl-8 mcol-lg-8 mcol-sm-8 news-ct-item">
+                                        <div class="news-content">
+                                            <a href="#" class="news-title">
+                                                <h3>
+                                                    Cáp đồng, accu, vật tư hư hỏng khác không có nhu cầu sử dụng, đã
+                                                    thu
+                                                    hồi
+                                                    của
+                                                    Viễn thông Cao Bằng
+                                                </h3>
+                                            </a>
+                                            <p class="news-description">...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mcol-xl-4 mcol-lg-4 mcol-md-4 mcol-col-12">
+                                <div class="flex news-wrap">
+                                    <div class="mcol-xl-4 mcol-lg-4 mcol-sm-4 news-thumbnail-ct">
+                                        <a href="#" class="news-thumbnail">
+                                            <img src="./image/assets/QB7.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="mcol-xl-8 mcol-lg-8 mcol-sm-8 news-ct-item">
+                                        <div class="news-content">
+                                            <a href="#" class="news-title">
+                                                <h3>
+                                                    Cáp đồng, vật tư công cụ, dụng cụ cũ hỏng không sử dụng của Viễn
+                                                    thông
+                                                    Phú Thọ
+                                                </h3>
+                                            </a>
+                                            <p class="news-description">
+                                                Thông báo việc đấu giá đối với danh mục tài sản: Tài sản là quyền sử
+                                                dụng
+                                                đất theo quy định của pháp luật về đất đai; …
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="footer-top bg-blue">
+                    <div class="container pd-ctn-mb">
+                        <div class="ctn-find-ft">
+                            <div class="flex al-center">
+                                <p class="mcol-md-8 mcol-col-12 label-find">Tìm kiếm cơ hội của bạn ngay hôm nay !</p>
+                                <div class="mcol-md-4 mcol-col-12 form-find-ft">
+                                    <form action="" method="">
+                                        <input type="text" placeholder="Tìm kiếm..." />
+                                        <button type="submit" class="m-button-search">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-midle">
+                    <div class="container pd-ctn-mb">
+                        <div class="flex">
+                            <div class="mcol-md-3 mcol-sm-12 top-bt-15">
+                                <div class="logo-ft-ct">
+                                    <a href="index.html">
+                                        <img src="./image/images/logo-footer_03.png" alt="">
+                                    </a>
+                                    <p class="email-md-ft" title="Email: daugiatructuyenvietnam@gmail.com">Email:
+                                        daugiatructuyenvietnam@gmail.com</p>
+                                    <p>0934.143369</p>
+                                </div>
+                            </div>
+                            <div class="mcol-md-3 mcol-sm-12 top-bt-15">
+                                <h3>Về với chúng tôi</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>&ensp;Giới thiệu
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>&ensp;Quy chế
+                                            hoạt động
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>&ensp;Cơ chế giải
+                                            quyết tranh chấp
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>&ensp;Tài liệu
+                                            hướng dẫn sử dụng
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mcol-md-3 mcol-sm-12 top-bt-15">
+                                <h3>Chính sách</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>&ensp;Điều lệ
+                                            tham gia đấu giá
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>&ensp;Văn bản
+                                            pháp quy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>&ensp;Chính sách
+                                            bảo mật thông tin
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mcol-md-3 mcol-sm-12 top-bt-15">
+                                <h3>Đăng kí nhận tin qua email</h3>
+                                <form action="" method="">
+                                    <input type="text" placeholder="Địa chỉ email">
+                                    <button type="submit">Đăng kí</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom bg-white-dark">
+                    <div class="container pd-ctn-mb">
+                        <div class="flex">
+                            <div class="mcol-md-6 mcol-sm-12">
+                                <h4>Công ty đấu giá hợp danh trực tuyến Việt Nam</h4>
+                                <ul>
+                                    <li>Địa chỉ trụ sở: Số B12, Khu phố 1, phường Bửu Long, thành phố Biên Hòa, tỉnh
+                                        Đồng Nai.</li>
+                                    <li>Điện thoại: 0934.143369&ensp;&ensp;Fax: 0251.8850066</li>
+                                    <li>Email: daugiatructuyenvietnam@gmail.com</li>
+                                </ul>
+                            </div>
+                            <div class="mcol-md-3 mcol-sm-12">
+                                <div class="img-bct">
+                                    <img src="./image/images/imgBCT_03.png" alt="imgBCT">
+                                </div>
+                                <p class="copyright">
+                                    Copyrighted to VNOA. | 2021
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- backtotop -->
+        <div class="backtotop-btn" id="backtotop-btn">
+            <div class="backtotop-icon">
+                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            </div>
+        </div>
+        <!-- import script -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="lightGallery-master/dist/js/lightgallery.min.js"></script>
+        <script type="text/javascript" src="lightGallery-master/modules/lg-thumbnail.min.js"></script>
+        <script type="text/javascript" src="lightGallery-master/modules/lg-fullscreen.js"></script>
+    </body>
+
+</html>

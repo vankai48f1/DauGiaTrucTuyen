@@ -1,0 +1,71 @@
+$font-base: Poppins, sans-serif;
+$font-secondary: Oswald, sans-serif;
+$font-weight-narrow: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+$primary-color: #E83F53;
+$secondary-color: #696969;
+
+$bg-light-color: #f4f4f4;
+
+$danger-color: #F56565;
+$warning-color: #F6AD55;
+$info-color: #63B3ED;
+$success-color: #1BA345;
+
+
+$black-color: #000;
+$white-color: #ffffff;
+
+$gray-1: #333333;
+$gray-2: #454545;
+$gray-3: #696969;
+$gray-4: #708090;
+$gray-5: #778899;
+$gray-6: #808080;
+$gray-7: #A9A9A9;
+$gray-8: #C0C0C0;
+$gray-9: #D3D3D3;
+$gray-10: #DCDCDC;
+$gray-11: #EFEFEF;
+$gray-12: #F5F5F5;
+
+
+$line-height-standard: 1;
+$line-height-medium: 1.5;
+$line-height-maximum: 2;
+
+
+$font-size-1: 10px;
+$font-size-2: 14px;
+$font-size-3: 14px;
+$font-size-4: 16px;
+$font-size-5: 18px;
+$font-size-6: 22px;
+$font-size-7: 24px;
+$font-size-8: 28px;
+$font-size-9: 32px;
+$font-size-10: 36px;
+$font-size-11: 40px;
+$font-size-12: 46px;
+
+@function lighter($value, $amount) {
+    @return scale-color($value, $lightness: $amount);
+}
+@function darker($value, $amount) {
+    @return scale-color($value, $lightness: -$amount);
+}
+
+@mixin rgba-bg($hexacolor, $opacity) {
+    background-color: rgba($hexacolor, $opacity);
+}
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -moz-transform: $property;
+    -o-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}

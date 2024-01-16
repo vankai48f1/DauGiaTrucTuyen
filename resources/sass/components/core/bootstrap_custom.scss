@@ -1,0 +1,295 @@
+@use '../base/_variables' as _variables;
+
+.btn, .btn-danger, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-secondary,
+.btn-info:not(:disabled):not(.disabled):active,
+.btn-info:not(:disabled):not(.disabled).active,
+.show > .btn-info.dropdown-toggle,
+.form-control
+{
+    &.focus, &:focus{
+        box-shadow: none;
+    }
+}
+.lf-btn{
+    border-radius: 0 !important;
+    font-weight: _variables.$font-weight-normal;
+    color: _variables.$gray-1;
+    padding: 8px 10px;
+    font-size: _variables.$font-size-2;
+    line-height: _variables.$line-height-medium !important;
+}
+.lf-btn-lg, .lf-btn-group-lg > .btn {
+    padding: 10px 12px;
+    font-size: _variables.$font-size-3;
+}
+
+/*------------------------------------*/
+/* ::::: BOOTSTRAP STYLE STARTS ::::::*/
+/*------------------------------------*/
+
+.lf-text-danger {
+    color: _variables.$danger-color !important;
+}
+.lf-bg-danger{
+    background: _variables.$danger-color !important;
+}
+.lf-btn-danger {
+    color: _variables.$white-color;
+    background-color: _variables.$danger-color;
+    border-color: _variables.$danger-color;
+}
+.lf-text-warning {
+    color: _variables.$warning-color !important;
+}
+.lf-bg-warning{
+    background: _variables.$warning-color !important;
+}
+.lf-btn-warning {
+    color: _variables.$gray-1;
+    background-color: _variables.$warning-color;
+    border-color: _variables.$warning-color;
+}
+.lf-text-info {
+    color: _variables.$info-color !important;
+}
+.lf-bg-info{
+    background: _variables.$info-color !important;
+}
+.lf-btn-info {
+    color: _variables.$white-color;
+    background-color: _variables.$info-color;
+    border-color: _variables.$info-color;
+}
+.lf-text-success {
+    color: _variables.$success-color !important;
+}
+.lf-bg-success{
+    background: _variables.$success-color !important;
+}
+.lf-btn-success {
+    color: _variables.$white-color;
+    background-color: _variables.$success-color;
+    border-color: _variables.$success-color;
+}
+.lf-text-primary {
+    color: _variables.$white-color !important;
+}
+.lf-bg-primary{
+    background: _variables.$primary-color !important;
+}
+.lf-btn-primary {
+    color: _variables.$white-color;
+    background-color: _variables.$primary-color;
+    border-color: _variables.$primary-color;
+
+    &:hover, &:focus{
+        color: _variables.$white-color;
+        border-color: _variables.darker(_variables.$primary-color,10%);
+        background-color: _variables.darker(_variables.$primary-color,10%);
+    }
+}
+.lf-text-secondary {
+    color: _variables.$secondary-color !important;
+}
+.lf-bg-secondary{
+    background: _variables.$secondary-color !important;
+}
+
+.lf-bg-grey-light{
+    background: _variables.$gray-11 !important;
+}
+.lf-btn-secondary {
+    color: _variables.$white-color;
+    background-color: _variables.$secondary-color;
+    border-color: _variables.$secondary-color;
+
+    &:hover, &:focus{
+        color: _variables.$gray-1;
+        border-color: _variables.darker(_variables.$secondary-color,10%);
+        background-color: _variables.darker(_variables.$secondary-color,10%);
+    }
+}
+
+.lf-bg-grey-light{
+    background: _variables.$gray-12 !important;
+}
+
+.lf-btn-danger {
+    &:hover, &:focus{
+        color: _variables.$white-color;
+        background-color: _variables.darker(_variables.$danger-color,30%);
+    }
+}
+.lf-btn-warning {
+    &:hover, &:focus{
+        color: _variables.$gray-1;
+        background-color: _variables.darker(_variables.$warning-color,30%);
+    }
+}
+.lf-btn-info {
+    &:hover, &:focus{
+        color: _variables.$white-color;
+        background-color: _variables.darker(_variables.$info-color,30%);
+    }
+}
+.lf-btn-success {
+    &:hover, &:focus{
+        color: _variables.$white-color;
+        background-color: _variables.darker(_variables.$success-color,30%);
+    }
+}
+
+//outline button
+.lf-btn-outline-primary {
+    color: _variables.$primary-color;
+    border: 1px solid _variables.$primary-color;
+    background: transparent;
+
+    &:hover {
+        color: _variables.$white-color;
+        border: 1px solid _variables.$primary-color;
+        background: _variables.$primary-color;
+    }
+}
+.lf-btn-outline-secondary{
+    color: _variables.$secondary-color;
+    border: 1px solid _variables.$secondary-color;
+    background: transparent;
+
+    &:hover {
+        color: _variables.$white-color;
+        border: 1px solid _variables.$secondary-color;
+        background: _variables.$secondary-color;
+    }
+}
+.lf-btn-outline-grey-light {
+    color: _variables.$gray-9;
+    border: 1px solid _variables.$gray-9;
+    background: transparent;
+
+    &:hover {
+        color: _variables.$gray-2;
+        border: 1px solid _variables.$gray-9;
+        background: _variables.$gray-9;
+    }
+}
+.lf-btn-outline-danger {
+    color: _variables.$danger-color;
+    border: 1px solid _variables.$danger-color;
+    background: transparent;
+
+    &:hover {
+        color: _variables.$white-color;
+        border: 1px solid _variables.$danger-color;
+        background: _variables.$danger-color;
+    }
+}
+.lf-btn-outline-warning {
+    color: _variables.$warning-color;
+    border: 1px solid _variables.$warning-color;
+    background: transparent;
+
+    &:hover {
+        color: _variables.$gray-1;
+        border: 1px solid _variables.$warning-color;
+        background: _variables.$warning-color;
+    }
+}
+.lf-btn-outline-info {
+    color: _variables.$info-color;
+    border: 1px solid _variables.$info-color;
+    background: transparent;
+
+    &:hover {
+        color: _variables.$white-color;
+        border: 1px solid _variables.$info-color;
+        background: _variables.$info-color;
+    }
+}
+.lf-btn-outline-success {
+    color: _variables.$success-color;
+    border: 1px solid _variables.$success-color;
+    background: transparent;
+
+    &:hover {
+        color: _variables.$white-color;
+        border: 1px solid _variables.$success-color;
+        background: _variables.$success-color;
+    }
+}
+/*------------------------------------*/
+/* ::::::: BOOTSTRAP STYLE ENDS ::::::*/
+/*------------------------------------*/
+.input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .input-group-text:not(:last-child),
+.input-group > .input-group-append:not(:last-child) > .btn,
+.input-group > .input-group-append:not(:last-child) > .input-group-text,
+.input-group > .input-group-prepend > .btn,
+.input-group > .input-group-prepend > .input-group-text,
+.card, .card-header:first-child, .card-footer:last-child,
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.nav-link {
+    padding: 12px 10px;
+}
+
+.form-control {
+    height: 40px;
+    padding: 8px 10px;
+    font-size: _variables.$font-size-3;
+    font-weight: _variables.$font-weight-normal;
+    line-height: _variables.$line-height-medium !important;
+    color: _variables.$gray-2;
+    background-color: _variables.$white-color;
+    border: 1px solid _variables.$gray-8;
+    border-radius: 0;
+}
+
+.lf-card {
+    .card-header {
+        padding: 12px 10px;
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+    }
+    .card-body{
+        padding: 12px 10px;
+    }
+    .card-footer{
+        padding: 12px 10px;
+    }
+}
+.lf-badge {
+    padding: 7px 5px;
+    border-radius: 0;
+}
+
+@for $i from 1 through 5 {
+    .border-#{$i} {
+        border-width: #{$i}px;
+        border-style:solid;
+    }
+    .border-left-#{$i} {
+        border-width: #{$i}px;
+        border-left-style: solid;
+    }
+    .border-top-#{$i} {
+        border-width: #{$i}px;
+        border-top-style: solid;
+    }
+    .border-right-#{$i} {
+        border-width: #{$i}px;
+        border-right-style: solid;
+    }
+    .border-bottom-#{$i} {
+        border-width: #{$i}px;
+        border-bottom-style: solid;
+    }
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: _variables.$white-color !important;
+    background-color: _variables.$primary-color;
+}

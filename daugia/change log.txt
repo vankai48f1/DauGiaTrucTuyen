@@ -1,0 +1,2 @@
+file changed:
+resources/views/seller/auction/show.blade.php
